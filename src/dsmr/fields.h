@@ -188,7 +188,6 @@ namespace dsmr
 #ifndef DSRM_IN_BELGIUM
 //Default is the Dutch DSMR specification
 namespace fields {  // Dutch DSMR specification 
-  {
 
     struct units
     {
