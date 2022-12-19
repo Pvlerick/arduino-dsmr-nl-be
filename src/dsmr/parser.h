@@ -158,7 +158,11 @@ namespace dsmr
 
       size_t len = str_end - str_start;
       if (len < min || len > max)
-        return res.fail("Invalid string length (yes!)", str_start);
+      {
+        char s[16];
+        snprintf(s, 16, "ISL %d", len);
+        return res.fail(s, str_start);
+      }
 
       concat_hack(res.result, str_start, len);
 
