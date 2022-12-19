@@ -159,8 +159,8 @@ namespace dsmr
       size_t len = str_end - str_start;
       if (len < min || len > max)
       {
-        char s[16];
-        snprintf(s, 16, "ISL %d", len);
+        char s[57];
+        snprintf(s, 57, "Invalid string length (expected min/max %d/%d; got %d)", min, max, len);
         return res.fail(s, str_start);
       }
 
