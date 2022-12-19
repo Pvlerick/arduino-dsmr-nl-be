@@ -158,7 +158,7 @@ namespace dsmr
 
       size_t len = str_end - str_start;
       if (len < min || len > max)
-        return res.fail("Invalid string length ()", str_start);
+        return res.fail("Invalid string length (yes!)", str_start);
 
       concat_hack(res.result, str_start, len);
 
